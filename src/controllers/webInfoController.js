@@ -27,7 +27,7 @@ exports.getAllWebInfo = async (req, res) => {
         const result = await webInfoModel.find();
         res.status(200).json({
             status: "success",
-            msg: "Get all service find successfully",
+            msg: "Get all web info found successfully",
             data: result,
         });
     } catch (e) {
@@ -78,7 +78,7 @@ exports.SingleInfo = async (req, res) => {
         let result = await webInfoModel.findOne({ _id: id });
         res.status(200).json({
             status: "success",
-            msg: "Info find successfully",
+            msg: "Info found successfully",
             data: result,
         });
     } catch (e) {
