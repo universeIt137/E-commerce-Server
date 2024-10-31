@@ -16,7 +16,25 @@ const webInfoSchema = new Schema({
     },
     logo: {
         type: String,
+    },
+    desc:
+    {
+        type: String,
+    },
+    phone:
+    {
+        type: String,
+    },
+    email:
+    {
+        type: String,
+    },
+    company:
+    {
+        type: String,
     }
+
+
 },
     { timestamps: true, versionKey: false }
 );
